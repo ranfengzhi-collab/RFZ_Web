@@ -1,11 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网页</title>
+    <title>我的前端学习日志</title>
+    <style>
+        /* 基础复位与全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 顶部区域：加入背景渐变与入场动画 */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.time-container {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    backdrop-filter: blur(5px); /* 磨砂玻璃效果 */
+}
+
+/* 学习卡片布局 */
+.content-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* 卡片样式与悬停动画 */
+.study-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease; /* 平滑过渡 */
+    position: relative;
+    cursor: pointer;
+}
+
+/* 鼠标悬停卡片时的交互：向上浮动并加强阴影 */
+.study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(102, 126, 234, 0.15);
+    border-left: 5px solid #667eea;
+}
+
+.badge {
+    background: #667eea;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+/* 点赞按钮交互 */
+.interaction-zone {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.interactive-btn {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(255, 71, 87, 0.3);
+}
+
+/* 按钮点击时的缩放反馈 */
+.interactive-btn:active {
+    transform: scale(0.95);
+}
+
+/* CSS 关键帧动画：顶部向下淡入 */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
 </head>
 <body>
-    <a href="每日学习/千峰教育/102-语义化标签.html">增强表单</a>
+
+    <header class="hero-section">
+        <h1>欢迎来到我的前端学习空间 👋</h1>
+        <div class="time-container">
+            <p id="current-date">正在加载日期...</p>
+            <p id="current-time">正在加载时间...</p>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <h2>📚 学习内容</h2>
+        
+        <div class="card-grid">
+            <div class="study-card">
+                <span class="badge">HTML</span>
+                <h3>HTML5 基础骨架</h3>
+                <p>掌握了标签结构、语义化标签（header, main, footer）以及如何在 GitHub Pages 上部署静态页面。</p>
+            </div>
+
+            <div class="study-card">
+                <span class="badge">CSS</span>
+                <h3>CSS 动画与过渡</h3>
+                <p>学习了 `transition` 和 `@keyframes`，让网页元素动起来，交互感拉满！</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="interaction-zone">
+        <button id="like-btn" class="interactive-btn">点个赞 👍 <span id="like-count">0</span></button>
+    </div>
+
+    <script>
+        // 1. 动态时间显示功能
+function updateTime() {
+    const now = new Date();
+    
+    // 格式化日期
+    const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+    const dateString = now.toLocaleDateString('zh-CN', options);
+    
+    // 格式化时间
+    const timeString = now.toLocaleTimeString('zh-CN', { hour12: false });
+    
+    // 写入 HTML
+    document.getElementById('current-date').innerText = dateString;
+    document.getElementById('current-time').innerText = timeString;
+}
+
+// 每秒钟调用一次 updateTime 函数，实现时间嘀嗒走动
+setInterval(updateTime, 1000);
+updateTime(); // 页面加载时立即执行一次
+
+
+// 2. 点赞按钮小交互
+let likes = 0;
+const likeBtn = document.getElementById('like-btn');
+const likeCount = document.getElementById('like-count');
+
+likeBtn.addEventListener('click', () => {
+    likes++;
+    likeCount.innerText = likes;
+});
+    </script>
 </body>
 </html>
