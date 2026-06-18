@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>层级选择器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .box1~.box2 {
+            background: yellow;
+        }
+
+        .box1~p {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <p>b1-111</p>
+    <p>b1-222</p>
+    <p>b1-333</p>
+    <div class="box2">
+        <p>b2-111</p>
+        <p>b2-222</p>
+        <p>b2-333</p>
+    </div>
+
+</body>
+
+</html>

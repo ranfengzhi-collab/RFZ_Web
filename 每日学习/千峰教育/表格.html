@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <p>有表头的表格</p>
+    <table border="1">
+        <th>head1</th>
+        <th>head2</th>
+        <tr>
+            <td>row1,cell1</td>
+            <td>row1,cell2</td>
+        </tr>
+        <tr>
+            <td>row2,cell1</td>
+            <td>row2,cell2</td>
+        </tr>
+    </table>
+    <p>没有边框线的表格</p>
+    <table>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+    </table>
+    <p>水平表头</p>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Telephone</th>
+            <th>Telephone</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <p>垂直表头</p>
+    <table border="1">
+        <tr>
+            <th>First Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th>Telephone:</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <th>Telephone:</th>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <p>带有标题的表格</p>
+    <table border="1">
+        <caption>Mothly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    <p>单元格合并</p>
+    <p>1:单元格行合并</p>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+            
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <p>2:单元格列合并</p>
+    <table border="1">
+        <tr>
+            <th>First Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <p>表格内的标签</p>
+    <table border="1">
+        <tr>
+            <td>
+                <p>这是一个段落</p>
+                <p>这是另一个段落</p>
+            </td>
+            <td>
+                <p>这个单元格中包含一个表格：</p>
+                <table border="1">
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>D</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>这个单元格包含一个列表</p>
+                <ol>
+                    <li>apples</li>
+                    <li>bananas</li>
+                    <li>pineaples</li>
+                </ol>
+            </td>
+            <td>HELLO</td>
+        </tr>
+    </table>
+<hr noshade="noshade">
+     <p>没有单元格边距</p>
+     <table border="1">
+        <tr>
+            <td>First</td>
+            <td>ROW</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+     </table>
+     <p>有单元格边距：cellpadding</p>
+     <table border="1" cellpadding="10">
+        <tr>
+            <td>First</td>
+            <td>ROw</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+     </table>
+     <hr>
+     <p>单元格间距：cellspacing</p>
+     <table border="1">
+        <caption>没有单元格间距：</caption>
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+     </table>
+     <table border="1" cellspacing="10">
+        <caption>单元格间距=10：</caption>
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+     </table>
+     <table border="1" cellsacing="0">
+        <caption>单元格间距=0：</caption>
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+     </table>
+     <hr>
+     <p>练习：没用CSS,仅用HTML写结构</p>
+     <table border="1">
+        <caption>受理员业务统计表</caption>
+        <tr>
+            <th colspan="2" rowspan="2">受理员</th>
+            
+            <th rowspan="2">受理数</th>
+            <th rowspan="2">自办数</th>
+            <th rowspan="2">直接解答</th>
+            <th colspan="2">拟办意见</th>
+            <th colspan="2">返回意见</th>
+            
+            <td>  </td>
+            <th>工单类型</th>
+            <td> </td>
+        </tr>
+        <tr>
+           
+           
+           
+            <td>同意</td>
+            <td>比例</td>
+            <td>数量</td>
+            <td>比例</td>
+            <td>建议件</td>
+           
+            <td>诉求件</td>
+            <td>咨询件</td>
+        </tr>
+        <tr>
+            <td rowspan="8">受理处</td>
+            <td>冉奉智</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            
+            <td> A</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+           
+            <td>A </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+           
+            <td>A </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+        
+            <td> A</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+           
+            <td>A </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            
+            <td> A</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+           
+            <td>总计</td>
+            <td> 20</td>
+            <td>20 </td>
+            <td> 20</td>
+            <td>20 </td>
+            <td>20 </td>
+            <td>20 </td>
+            <td>20 </td>
+            <td>20 </td>
+            <td>20 </td>
+            <td>20 </td>
+        </tr>
+       
+     </table>
+</body>
+</html>

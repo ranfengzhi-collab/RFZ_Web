@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script脚本</title>
+</head>
+<body>
+    <p id="click">点击下边的按钮，可实现调用Javascript脚本，实现颜色改变，句子改变</p>
+    <script>
+        function fun()
+        {
+            x=document.getElementById("click")
+            x.style.color="#ff0000"; 
+            x.innerHTML="Hello,Javascript!";
+        }
+    </script>
+    <button type="button" onclick="fun()">点这里</button>
+</body>
+</html>

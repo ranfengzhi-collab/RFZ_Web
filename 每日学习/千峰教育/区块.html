@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            background-color: rgb(255, 165, 0);
+            width: px;
+            height: 30px;
+            margin: 0;
+            bottom: 0;
+        }
+
+        .p1 {
+
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .p2{
+            text-align: center;
+        }
+
+        .box2 {
+            background-color: rgba(255, 225, 0, 0.944);
+            float: left;
+        }
+         .box3 {
+            background-color: rgba(227, 220, 220, 0);
+            float: left;
+        }
+          .box4{
+            background-color: rgba(255, 165, 0);
+            clear:both;
+        }
+        .tab{
+            margin: 0;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <p class="p1">主要的网页内容标题</p>
+    </div>
+    <div class="box2">
+        <ul type="none" type="left">
+            <li>菜单</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+    </div>
+    <div class="box3">
+        内容在这里
+    </div>
+    <div class="box4">
+        <p class="p2">版权所有</p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <p>利用表格生成该区块</p>
+    <table border="1" class="tab" margin="0" width="500px">
+        <tr style="background-color: coral;">
+            <td colspan="2" >主要的网页标题</td>
+            
+        </tr>
+        <tr >
+            <td style="background-color: gold;" width="100">
+                菜单<br>
+                HTML<br>
+                CSS<br>
+                JavaScript<br>
+            </td>
+            <td style="background-color: rgb(239, 239, 235);" height="200px">内容在这里</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: coral;"  align="center">版权所有</td>
+            
+        </tr>
+    </table>
+</body>
+
+</html>

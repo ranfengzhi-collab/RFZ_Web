@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 共同去除外边距,内边距,没有空隙 */
+}
+
+.con {
+    width: 100%;
+    /* 指定一个共同的类选择器,对于共同的样式可以直接 将标签的选择器 命名为con,共同管理 */
+}
+
+.header {
+    height: 924px;
+    background-color: yellow;
+    /* 先将第一个header部分的高度指定出来,宽度适应body,颜色暂时设为黄色,方便接下来进行对子容器进行添加样式 */
+}
+
+.site_header {
+    width: 100%;
+    height: 154px;
+    background-image: url(img/头部背景图.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* 将头部图片作为背景,添加到第一个site_header盒子中,将高度设为指定高度,插入图片,使图片居中,不重复,大小撑满盒子 */
+}
+
+.site_header>ul {
+    float: right;
+    padding-right: 85px;
+    padding-top: 6px;
+}
+
+.site_header li {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(225, 226, 233);
+    line-height: 36px;
+    list-style: none;
+    padding-right: 12px;
+
+}
+
+.site_header li:hover {
+    color: white;
+}
+
+.site_header li img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+ .main_nav>ul {
+    height: 60px;
+    color: white;
+    background-color: rgb(2, 88, 165);
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-top: 1px solid #337bb8;
+    list-style: none;
+}
+
+.main_nav>ul>li {
+    font-size: 18px;
+    line-height: 60px;
+    position: relative
+    
+}
+.main_nav li ul{
+    
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    color: rgb(18, 18, 18);
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 183px;
+    z-index: 999;
+    border-top: 3px solid orange;
+  
+}
+.item1>ul li{
+    size: 18px;
+    height: 60px;
+    width: 160px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom:1px solid gray ;
+}
+.item1:hover ul{
+    display: block;
+}
+
+.hero_banner {
+    height: 630px;
+    background-color: rgb(94, 186, 94);
+
+}
+.hero_banner>img{
+    height: 630px;
+}
+.body{
+    height:2000px ;
+    background-color: lightslategray;
+    clear: none;
+}
+ 
+.box1{
+    margin: 0 auto;
+    clear: none;
+    
+}
+.sub-box11{
+    height: 790px;
+    width: 843px;
+    background-color: aqua;
+    float: left;
+}
+.sub-box12{
+    height: 790px;
+    width: 843px;
+    background-color: rgb(114, 220, 34);
+    float: left;
+}

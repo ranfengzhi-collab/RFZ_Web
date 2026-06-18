@@ -1,0 +1,224 @@
+<!DOCTYPE html><!--文档声明标签-->>
+<html lang="ZH-CN">
+    <!--说明语言为文，中文为ZH-CN，英文为en，日文为ja-jp  -->
+    <meta charset="UTF-8">
+    <head><!--标题-->
+        <center><title style="color: blue;">HTML学笔记</title></center>
+    </head>
+    <body>
+        <h1><center>HTML学习笔记</center></h1>
+      <div>
+           <p> <strong>HTML</strong>(<em style="color: tomato;">Hyper Text Markup language</em>)是什么？</p>
+            HTML是一种超文本标语言&emsp;（注意！！！&emsp;&emsp;HTML不是编程语言，是用来描述网页的语言）<br>
+            <hr style noshade>
+            <p><b>万维网</b><i style="color: tomato;">(world wide web consortium)</i>(W3C)</p>
+           <p> web网页的组成<br>
+            &emsp;&emsp;HTML:属于结构<br>
+            &emsp;&emsp;CSS：表现方式<br>
+            &emsp;&emsp;JavaScript:行为<br>
+            <hr style noshade="noshade">
+            </p>
+      </div>
+      <div>
+            <p>
+                HTML的基本<strong>文本语言</strong><br>
+                <strong>双标记:&emsp;</strong>&lt;<strong>标记 &emsp;属性=“属性值”</strong>&gt;&emsp;&emsp;&lt;<strong>/标记</strong>&gt;
+                <strong>单标记:&emsp;</strong>&lt;<strong>标记&emsp; 属性=“属性值”</strong>&gt;
+            </p>
+            <p>
+                <strong>文本标题</strong><em style="color: tomato;">(heading)</em>(文本标题最多到六级标题.h1~h6)<br>
+                &lt;h1&gt; &emsp; &lt;/h1&gt;一级标题<br>
+                &lt;h2&gt; &emsp; &lt;/h2&gt;二级标题<br>
+                &lt;h3&gt; &emsp; &lt;/h3&gt;三级标题<br>
+                &lt;h4&gt; &emsp; &lt;/h4&gt;四级标题<br>
+                &lt;h5&gt; &emsp; &lt;/h5&gt;五级标题<br>
+                &lt;h6&gt; &emsp; &lt;/h6&gt;六级标题<br>
+            </p>
+            <p><strong>段落<em style="color: tomato;">(paragraph)</em></strong><br>
+                &lt;p&gt; &emsp; &lt;/p&gt;
+            </p>
+            <p>
+                <strong>换行</strong><em style="color: tomato;">(break)</em><br>
+                &lt;br&gt;
+            </p>
+            <p>
+                <strong>下划线</strong><em style="color: tomato;">(underline)</em><br>
+                &lt;u&gt; &emsp; &lt;/u>&gt;
+            </p>
+            <p>
+                <strong>粗体字</strong><em style="color: tomato;">(bold)&emsp;(strong)</em><br>
+                &lt;b&gt;&emsp;&lt/b&gt;<br>
+                &lt;strong&gt; &emsp; &lt;/strong&gt;(推荐使用strong)
+                例如：<b>粗体字表示方式1</b>&emsp;<strong>粗体字表示方式2</strong>
+            </p>
+            <p>
+                <strong>斜体字</strong><em style="color: tomato;">(italic)&emsp;(emphasis)</em><br>
+                &lt;em&gt;&emsp;&lt;/em&gt;<br>
+                &lt;i&gt;&emsp;&lt;/i&gt;<br>
+                例如：<em>斜体字表示方式1</em>&emsp;<i>斜体字表示方式2</i>
+            </p>
+            <p>
+                删除线(delete)(strick)
+                &lt;del&gt;&lt;/del&gt;
+                &lt;s&gt;&lt;/s&gt;<br>
+                例如：<del>删除线</del>
+            </p>
+            <p>
+                <strong>上标</strong><em style="color: tomato;">(superscript)</em><br>
+                &lt;sup&gt;&lt;/sup&gt;<br>
+                例如：<sup>上标</sup>
+            </p>
+            <p>
+                <strong>下标</strong><em style="color: tomato;">(subscript)</em>
+                &lt;sub&gt;&emsp;&lt;/sub&gt;<br>
+                例如：<sub>下标</sub>
+            </p>
+            <p>
+                <strong>水平线</strong><em style="color: tomato;">(horyzontal line)</em><br>
+                &lt;hr&gt;&emsp;&lt;/hr&gt;
+            </p>
+            <p>
+               <strong> 版权</strong><em style="color: tomato;">(copyright)</em><br>
+                &amp;copy;<br>
+                例如：&copy;
+            </p>
+            <p>
+      </div>
+            <strong>商标</strong><em style="color: tomato;">(trademark)</em><br>
+            &amp;trade;<br>
+            &amp;reg;<br>
+            例如：品牌商标&trade;<br>
+            &emsp;&emsp;注册商标&reg;
+        </p>
+        <p>
+            <strong>书名号</strong><br>
+            左书名号&amp;laquo;(left &emsp;double &emsp;angle &emsp;quote)<br>
+            右书名号&amp;raquo;(right &emsp;double &emsp;angle &emsp; quote)
+        </p>
+        <br>
+        <hr noshade="noshade">
+        <p>
+           <strong> div标签</strong><em style="color: tomato;">(division)</em><br>
+            &lt;div&gt;块级容器，默认占一行
+        </p>
+        <p>
+            <strong>span<em style="color: tomato;">跨度</em></strong><br>
+            &lt;span&gt;用局部文本样式修饰，行内容器，默认是行显示
+        </p>
+        <br>
+        <hr noshade="noshade">
+        <div>
+            <strong >列表</strong><br>
+            <ol type="1">
+                <li><strong>无序列表</strong></li><br>
+                &lt;ul&gt;<br>&emsp;&emsp;&lt;li&gt;&emsp;&lt;/li&gt; <br>&lt;/ul&gt;<br>
+                无序列表的样式默认是黑色实心原点<br>
+                 <ul type="disc">
+                    <li>黑色实心圆点</li>
+                </ul><br>
+                通过更改&lt;type="属性值"&gt;<br>
+                将属性值改为 circle为空心圈 <br>
+                <ul type="circle">
+                    <li>空心圆点</li>
+                </ul><br>
+                将属性值改为square为实心正方向<br>
+                <ul type="square">
+                    <li>实心正方形</li>
+                </ul><br>
+                将属性值改为none 为取消显示项目编号
+                
+                <li><strong>有序列表</strong></li><br>
+                &lt;ol&gt;<br>&emsp;&emsp;&lt;li&gt;&emsp;&lt;/li&gt; <br>&lt;/ol&gt;<br>
+                有序列表是有序号的,序号为a,A,i(罗马数字小写),I(罗马数字大写),1(阿拉伯数字)<br>
+                <ol type="A" start="1">
+                    <li>序号为A</li>
+                    <li>序号为B</li>
+                </ol><br>
+                 <ol type="a" start="1">
+                    <li>序号为a</li>
+                    <li>序号为b</li>
+                </ol><br>
+                 <ol type="i" start="1">
+                    <li>序号为i</li>
+                    <li>序号为ii</li>
+                </ol><br>
+                 <ol type="I" start="1">
+                    <li>序号为I</li>
+                    <li>序号为II</li>
+                </ol><br>
+                 <ol type="1" start="1">
+                    <li>序号为1</li>
+                    <li>序号为2</li>
+                </ol><br>
+                &lt;ol type="A"或者"a"或者"i"或者"I"或者1&gt;&emsp;&lt;/ol&gt;即可按照序列编号<br>
+                将有序列表的序号按照指定位置进行排序<br>
+                &lt;type="A" start="3"&gt;即可实现从C开始编号<br>
+                <ol type="A" start="3">
+                    <li>序号C</li>
+                </ol><br>
+                <li><strong>自定义列表</strong></li><br>
+                &lt;dl&gt;<br>&emsp;&emsp;&lt;dt&gt;&emsp;&lt;/dt&gt; <br>&emsp;&emsp;&lt;dd&gt;&emsp;&lt;/dd&gt;<br>&lt;/dl&gt;
+                自定义列表一般用于图文显示当中,&lt;dd&gt;中为图片;&lt;dt&gt;中为文字;
+                <dl>
+                    <dt>自定义列表的dt文字部分</dt>
+                    <dl>自定义文字列表的dl图片部分<img src="image/img1.png " width="30px"  title="这是图片的文字说明部分" alt="这是图片的警告部分,当图片未正常显示时会出现这句话"></dl>
+                </dl>
+            </ol>
+        </div>
+        <hr noshade="noshade">
+        
+        <div>
+            <strong>图片标签</strong><br>
+            &lt;img src="路径(一般填写相对路径,绝对路径可能会出现Http协议问题) title="图片的文字说明部分,当鼠标放在图片上会显示" alt="图片的警告部分,当图片未能正常显示会出现这句话""&gt;<br>
+            当代码在图片的下一级文件夹中,需要利用../j跳到与图片所在的级别<br>
+            <hr noshade="noshade">
+            <strong >超链接</strong><br>
+            &lt;a&emsp;href="链接"&emsp;title="悬停后的提示信息"&emsp;target="规定在何处打开链接,一般为默认的" 链接名称 &gt;&lt;/a&gt;<br>
+            例如<br>
+            <a href="https://gemini.google.com/app?hl=zh" title="Gemini的超链接" target="_blank"></title>Gemini的超链接</a><br>
+            还可以是图片形式的超链接,例如<br>
+            <a href="https://gemini.google.com/app?hl=zh" title="Gemini的超链接" target="_blank"><img src="image/Gemi.png" title="Gemini的超链接" alt="警告"></a>
+    
+        </div>
+        <hr>
+        <div>
+            table例子<br>
+            <table border="1" cellspacing="0" cellpadding="0" align="center">
+                <tr width="500" style="color: tomato;">
+                    <tb>1</tb>
+                    <tb colspan="2" width="100">2</tb>
+                    <tb>2</tb>
+                    <tb>4</tb>
+                </tr>
+                <tr>
+                    <tb></tb>
+                    <tb></tb>
+                    <tb></tb>
+                    <tb></tb>
+                </tr>
+                <tr>
+                    <tb></tb>
+                    <tb></tb>
+                    <tb></tb>
+                    <tb></tb>
+                </tr>
+                <tr>
+                    <tb></tb>
+                    <tb></tb>
+                    <tb></tb>
+                    <tb></tb>
+                </tr>
+                <tr>
+                    <tb></tb>
+                    <tb></tb>
+                    <tb></tb>
+                    <tb></tb>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+    </body>
+</html>
