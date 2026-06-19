@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFZ的学习网站</title>
+
+    <style>
+        /*去掉浏览器自带边距,让边框不撑大盒子*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        /*换#非f5f7fa灰色背景，#333333深灰色文字，sans-serif无衬线字体，行高设为1.6*/
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            font-family: sans-serif;
+            line-height: 1.6;
+        }
+
+        /*装饰头部header部分，实现线性渐变背景颜色，文字颜色为白色，居中，padding为3rem,1rem*/
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+
+        }
+
+        /*header下的小盒子，设置为半透明，上外边距为1rem,padding为0.5rem,1.5rem, 行内块元素，外边框为圆角，radius*/
+        header div {
+            margin-top: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+        }
+
+        /*主内容 装饰卡片样式*/
+        /*主内容最大宽度为800px,上下外边距2rem,左右居中，内边距，上下0rem,左右1rem*/
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0rem 1rem;
+        }
+
+        /*样式卡片 study-card 背景色设为白色，内边距1.5rem,圆角12px,盒子阴影 0 4 6*/
+        .study-card {
+            background: white;
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+            /*过渡动画  全部过度发生在0.3秒，ease 平缓过度，鼠标：pointer 小手形状，伪类选择器:hover 卡片向上飘5像素，阴影变大，左侧出现紫色动态边框*/
+            transition: all 0.03s ease;
+            cursor: pointer;
+        }
+
+        .study-card:hover {
+            transform: translateY(-0.5px);
+            box-shadow: 0 12px 20px rgba(102, 126, 234, 0.15);
+            border-left: 5px solid #667eea;
+        }
+    </style>
+</head>
+
+<body>
+    <!--头部标题-->
+    <header>
+        <h1>欢迎🎉 来到 RFZ 的 学习空间</h1>
+        <!--两个p标签，记录日期和时间-->
+        <div>
+            <p id="current-date">current-date</p>
+            <p id="current-time">current-time</p>
+        </div>
+
+
+    </header>
+
+    <!--主体main-->
+    <main>
+        <h2>📚学习内容</h2>
+        <div class="study-card">
+            <h3>💻HTML+CSS技能学习</h3>
+            <p>技能学习的内容，方向，计划，建议等</p>
+        </div>
+
+        <div class="study-card">
+            <h3>📕阅读</h3>
+            <p>技能学习的内容，方向，计划，建议等</p>
+        </div>
+
+        <div class="study-card">
+            <h3>💵英语</h3>
+            <p>技能学习的内容，方向，计划，建议等</p>
+        </div>
+
+        <div class="study-card">
+            <h3>🎃专业</h3>
+            <p>技能学习的内容，方向，计划，建议等</p>
+        </div>
+
+
+
+
+        <script>
+            function showTime() {
+                const now = new Date();
+                const dateOptions = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+                const dateText = now.toLocalDateString('zh-CN', dateOptions);
+
+                const timeText = now.toLocalTimeString('zh-CN', { hour12: false });
+
+                doucument.getElementById('current-date').innerText = dateText;
+                doucument.getElementById('current-time').innerText = timeText;
+
+                setInterval(showTime, 1000);
+                showTime();
+
+                let likes = 666;
+                let isClicked = false;
+                const likeBtn = doucument.getElementById('like-btn');
+                const likeCount = document.getElementById('like-count');
+
+
+        </script>
+    </main>
+</body>
+
+</html>

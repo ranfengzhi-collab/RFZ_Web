@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        div [name]{
+            background: yellow;
+        }
+        div[class^=b]
+        {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            border: 1px solid black;
+
+        }
+
+        div[class$=g]
+        {
+            width: 100px;
+            height: 100px;
+            color: rgb(255, 0, 81);
+            border: 1px solid black;
+
+        }
+
+        div[class^=c]
+        {
+            width: 100px;
+            height: 100px;
+            color: rgb(45, 176, 30);
+            border: 1px solid black;
+
+        }
+
+        div[class=box2]{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        用户：<input type="text" name="username"><br>
+        密码：<input type="password" name="password"><br>
+        邮箱：<input type="email" name="email"><br>
+    </div>
+
+    <!--模糊选择-->
+    <div class="box1">以b开头的模糊选择</div>
+    <div class="dog">以g结尾的模糊选择</div>
+    <div class="cat">有c字符的模糊选择</div>
+
+    <!--属性选择-->
+    <div class="box2">指定属性名，属性值的</div>
+</body>
+</html>
