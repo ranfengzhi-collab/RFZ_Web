@@ -1,0 +1,158 @@
+/* ==========================================================================
+   1. 全局初始化与基础样式
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. 头部区域 (Header) 渐变与时间盒子
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    position: relative;
+}
+
+header div {
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.back-home-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+.back-home-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ==========================================================================
+   3. 布局版芯限制
+   ========================================================================== */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-left: 4px solid #667eea;
+    padding-left: 0.5rem;
+}
+
+/* ==========================================================================
+   4. 首页：大分类卡片样式 (Category Cards)
+   ========================================================================== */
+.category-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.category-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 6px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+/* 悬停放大上浮 */
+.category-card-link:hover .category-card {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.html-theme { border-top-color: #ff7849; }
+.css-theme { border-top-color: #2575fc; }
+
+.click-tip {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #667eea;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   5. 专项页：小作业卡片样式 (Study Cards)
+   ========================================================================== */
+.card-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.study-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.study-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(255, 120, 73, 0.15);
+    border-left: 5px solid #ff7849;
+}
+
+.card-header {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   6. 底部点赞按钮交互
+   ========================================================================== */
+.interaction-zone {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+#like-btn {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(255, 71, 87, 0.3);
+}
+
+#like-btn:active {
+    transform: scale(0.95);
+}

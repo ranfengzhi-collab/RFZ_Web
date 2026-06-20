@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PingFang SC','Microsoft YaHei',sans-serif;
+}
+
+body{
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header{
+    background: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    position: relative;
+}
+
+header div{
+    margin-top: 1rem;
+    background: rgba(255, 255,255, 0.2);
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+}
+
+
+main{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+}
+
+main h2{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-left: 4px solid #667eea;
+    padding-left: 0.5rem;
+}
+
+.category-card-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.category-card{
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 6px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.category-card-link:hover .category-card{
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 单独设置分类卡片上边框的颜色 */
+.html-theme{
+    border-top-color: #ff7849;
+}
+
+.click-tip{
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #667eea;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.interaction-zone{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+#like-btn{
+    background: #ff4757;
+    color: white;
+    border:none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius:50px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(255, 71,87, 0.3);
+}
+
+#like-btn:active{
+    transform: scale(0.95);
+}

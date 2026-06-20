@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的前端学习空间 - 首页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>欢迎来到我的前端学习空间 👋</h1>
+        <div>
+            <p id="current-date">正在加载日期...</p>
+            <p id="current-time">正在加载时间...</p>
+        </div>
+    </header>
+
+    <main>
+        <h2>🗂️ 学习看板（点击进入专项）</h2>
+        
+        <div class="category-grid">
+            <a href="html-learning.html" class="category-card-link">
+                <div class="category-card html-theme">
+                    <h3>🧡 HTML 基础与结构</h3>
+                    <p>包含标签、表单、表格等所有 HTML 练习作品...</p>
+                    <span class="click-tip">点击进入列表 →</span>
+                </div>
+            </a>
+
+            <a href="#" class="category-card-link">
+                <div class="category-card css-theme">
+                    <h3>💙 CSS 样式与美化</h3>
+                    <p>包含布局、动画、特效等练习（正在赶来...）</p>
+                    <span class="click-tip">尚未开启 →</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <div class="interaction-zone">
+        <button id="like-btn">点个赞 👍 <span id="like-count">0</span></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
