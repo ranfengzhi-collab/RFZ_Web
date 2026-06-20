@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>怪异盒模型</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 50px;
+
+        }
+        .box1{
+            padding: 10px;
+            border: 1px solid blue;
+            box-sizing: content-box;
+        }
+        .box2{
+            padding: 10px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

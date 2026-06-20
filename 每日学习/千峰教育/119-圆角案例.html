@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角案例-搜索框</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 935px;
+            height: 120px;
+            border: 1px solide #dedede;
+            margin: 0 auto;
+            background: #eceaeb;
+            border-radius: 15px;
+            box-shadow: 4px 11px 7px #bfbfbf, -4px 11px 7px #bfbfbf;
+
+        }
+        input{
+            outline: none;
+        }
+
+        input[type=text] {
+            width: 693px;
+            height: 86px;
+            margin: 17px;
+            border: 3px solid #cccc;
+            border-radius: 3px;
+            font-size: 25px ;
+            font-family:  sans-serif;
+        }
+        input[type=submit]{
+            width: 200px;
+            height: 83px;
+            background:linear-gradient(to right,rgb(155, 155, 211),rgba(0, 0, 255, 0.089));
+            border-radius: 5px;
+            text-align: center;
+            font-size:25px;
+            color: rgb(8, 81, 81);
+            font-family: "黑体";
+            font-weight: bold;
+            border: 1px solid rgba(67, 67, 202, 0.381);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <input type="text" name="search" placeholder="请搜索感兴趣的内容……">
+            <input type="submit" value="GO">
+        </form>
+    </div>
+
+</body>
+
+</html>

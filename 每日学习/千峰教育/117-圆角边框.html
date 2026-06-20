@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框
+    </title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+             margin-bottom: 10px;
+            border: 1px solid black;
+           
+            border-radius: 10px;
+        }
+        .box1{
+            background-color: yellow;
+            border-radius: 10px;
+        }
+        .box2{
+            background: blue;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .box3{
+            background: green;
+            border-radius: 10px/20px;
+        }
+        .box4{
+            background: purple;
+            border-radius: 50%;
+        }
+        .box5{
+            background: red;
+            border-top-right-radius:100px;
+        }
+        .box6{
+            width: 200px;
+            height: 100px;
+            background: orange;
+            border-radius: 100px 100px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目标伪类选择器</title>
+    <style>
+        div.context{
+            display: none;
+        }
+        div.context:target{
+            display:block ;
+        }
+    </style>
+</head>
+<body>
+    <!--利用目标选择器实现手风琴效果-->
+    <a href="#a">a</a>
+    <div id="a" class="context">1111022222033333</div>
+    
+</body>
+</html>

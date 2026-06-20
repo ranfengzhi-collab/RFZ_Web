@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>结构选择器</title>
+    <title>结构伪类选择器</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        :root,body{
+            background-color: azure;
+        }
+        .box1 :first-child{
+            background-color: yellow;
+        }
+        .box1 :last-child{
+            background-color: blue;
+        }
+        .box1 :nth-child(2){
+            background-color: green;
+        }
+        div :only-child{
+            background-color: purple;
+        }
+        div:empty{
+            background-color: black;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <div class="box1">
+        <p>111</p>
+        <p>222</p>
+        <p>333</p>
+    </div>
+    <div>
+        <p>444</p>
+    </div>
+    <div></div>
     
 </body>
 </html>

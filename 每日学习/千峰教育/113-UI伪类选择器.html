@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI伪类选择器</title>
+    <style>
+        input:enabled{
+            background: yellow;
+        }
+        input[type=checkbox]{
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+        }
+        input:checked{
+            background-color: red;
+
+        }
+        input :focus{
+            background-color: blue;
+        }
+        div::selection{
+            background-color: blue;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        用户：<input type="text" name="username"><br>
+        密码：<input type="password" name="password"><br>
+        <input type="checkbox" name="checkbox"><br>
+        <input type="submit" name="提交"><br>
+    </form>
+    <div>
+        11111111111
+    </div>
+</body>
+</html>
