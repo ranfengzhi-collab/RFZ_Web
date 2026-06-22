@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端案例</title>
+    <link rel="stylesheet" href="/image/font_5198471_ae1ts98mugv/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 44px;
+            background: rgb(5, 142, 5);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header div {
+            height: 25px;
+            width: 60px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 254, 254, 0.4);
+        }
+
+        header div:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        header div:nth-child(1) {
+            border-radius: 12px 0 0 12px;
+            background: #63d985;
+        }
+
+        header div:nth-child(2) {
+            background: #63d985;
+            border-radius: 0 12px 12px 0;
+        }
+        
+
+
+        footer {
+            height: 44px;
+            background: rgb(255, 255, 255);
+
+
+        }
+
+        footer ul {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-around;
+        }
+
+        footer ul li {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            color: #d5d5d7;
+        }
+
+        .last li i {
+            height: 21px;
+            line-height: 21px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .last li span {
+            height: 17px;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+        }
+
+        .last li:hover {
+            color: #08c63e;
+        }
+
+        .last li:nth-child(3) {
+            position: relative;
+        }
+
+        .last li:nth-child(3) i {
+            width: 50px;
+            height: 50px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            position: absolute;
+            margin-left: -25px;
+            top: -8px;
+            font-size:30px;
+            text-align: center;
+            line-height: 50px;
+            background-color: wheat;
+        }
+
+        .last span{
+            cursor: default;
+        }
+
+
+        section {
+            flex: 1;
+            overflow: auto;
+
+
+        }
+
+        section ul {
+            display: flex;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+
+        }
+
+        section ul li {
+            flex: 1;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px;
+            color: #c7c7c7;
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        section ul li:hover {
+            border-bottom: 2px solid #08c63e;
+            color: #14bf4d;
+        }
+
+        section .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .list>div {
+            width: 50%;
+            margin-top: 4px;
+            border: 1px solid gray;
+
+        }
+
+        .list div img {
+            width: 100%;
+            height: 100px;
+        }
+
+        .list div p {
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <section>
+        <ul>
+            <li>足球现场</li>
+            <li>足球生活</li>
+            <li>足球美女</li>
+        </ul>
+        <div class="list">
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华北水利水电大学</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="last">
+            <li>
+                <i class="iconfont icon-zhifubaozhifu"></i>
+                <span>支付宝</span>
+            </li>
+            <li>
+                <i class="iconfont icon-zhifubaozhifu"></i>
+                <span>支付宝</span>
+            </li>
+            <li>
+                <i class="iconfont icon-zhifubaozhifu"></i>
+            </li>
+            <li>
+                <i class="iconfont icon-zhifubaozhifu"></i>
+                <span>支付宝</span>
+            </li>
+            <li>
+                <i class="iconfont icon-zhifubaozhifu"></i>
+                <span>支付宝</span>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
