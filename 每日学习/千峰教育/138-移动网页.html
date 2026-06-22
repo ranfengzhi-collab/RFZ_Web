@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动网页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 鼠标滚动条不显示 */
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        header {
+            height: 45px;
+            background: gray;
+        }
+
+        header ul {
+            display: flex;
+            overflow: auto;
+
+        }
+
+        header ul li {
+
+            flex-shrink: 0;
+
+            line-height: 45px;
+            padding: 0 10px;
+
+        }
+        header ul li:hover{
+            background: white;
+            color: red;
+        
+        }
+
+        footer {
+            height: 50px;
+            background: gray;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            overflow: auto;
+
+        }
+
+        section ul {
+            width: 85px;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+
+
+
+        }
+
+
+
+
+        section ul li {
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #f8f8f8;
+
+        }
+
+        section ul li:hover {
+            color: red;
+            background: white;
+        }
+
+        section>div {
+            flex: 1;
+            background: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            overflow: auto;
+        }
+
+        .content div {
+            height: 101px;
+            width: 33.3%;
+            text-align: center;
+        }
+
+        .content>div img {
+            width: 60px;
+            height: 50px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+        </ul>
+
+    </header>
+    <section>
+        <ul>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+        </ul>
+        <div class="content">
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+            <div>
+                <img src="/image/网页图片1.png" alt="">
+                <p>华水</p>
+            </div>
+
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
