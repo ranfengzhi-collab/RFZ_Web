@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关键帧动画</title>
+    <style>
+        /* 通配符样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* swiper-container样式 */
+        .swiper-container {
+            width: 640px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+
+        }
+
+        /* 设置动画 */
+        @keyframes run {
+            0% {
+                transform: translateX(0);
+            }
+
+            10% {
+                transform: translateX(-640px);
+            }
+
+            20% {
+                transform: translateX(-1280px);
+            }
+
+            30% {
+                transform: translateX(-1920px);
+            }
+
+            40% {
+                transform: translateX(-2560px);
+            }
+
+            50% {
+                transform: translateX(-3200px);
+            }
+
+            60% {
+                transform: translateX(-3840px);
+            }
+
+            70% {
+                transform: translateX(-640px);
+            }
+
+            80% {
+                transform: translateX(-640px);
+            }
+
+            100% {
+                transform: translateX(-640px);
+            }
+
+        }
+
+        /* 内容的样式 */
+        .context {
+            width: 640px;
+            height: 300px;
+
+        }
+
+        /* swiper-slide样式 */
+        .swiper-slide {
+            float: left;
+        }
+
+        /* swiper-wrapper的样式 */
+        .swiper-wrapper {
+            width: 99999px;
+            animation: run 6s linear 1s ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 实现轮播动画 -->
+    <!-- swiper-container 外边的大盒子-->
+    <div class="swiper-container">
+        <!-- swiper-wrapper 中间的长条盒子-->
+        <div class="swiper-wrapper">
+            <!-- swiper-slide 长盒子中的各个小盒子-->
+            <div class="swiper-slide">
+                <!-- 轮播内容，这里放的盒子，其实可以放图片 -->
+                <div class="context" style="background-color: rgb(137, 120, 27);"></div>
+            </div>
+            <div class="swiper-slide">
+                <!-- 轮播内容，这里放的盒子，其实可以放图片 -->
+                <div class="context" style="background-color: rgb(22, 235, 193);"></div>
+            </div>
+            <div class="swiper-slide">
+                <!-- 轮播内容，这里放的盒子，其实可以放图片 -->
+                <div class="context" style="background-color: antiquewhite;"></div>
+            </div>
+            <div class="swiper-slide">
+                <!-- 轮播内容，这里放的盒子，其实可以放图片 -->
+                <div class="context" style="background-color: rgb(14, 13, 76);"></div>
+            </div>
+            <div class="swiper-slide">
+                <!-- 轮播内容，这里放的盒子，其实可以放图片 -->
+                <div class="context" style="background-color: rgb(134, 24, 24);"></div>
+            </div>
+            <div class="swiper-slide">
+                <!-- 轮播内容，这里放的盒子，其实可以放图片 -->
+                <div class="context" style="background-color: rgba(138, 24, 144, 0.256);"></div>
+            </div>
+            <div class="swiper-slide">
+                <!-- 轮播内容，这里放的盒子，其实可以放图片 -->
+                <div class="context" style="background-color: rgb(76, 170, 28);"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

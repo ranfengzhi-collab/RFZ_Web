@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>折扇效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* 给盒子添加样式 */
+        div {
+            /* 宽高 */
+            width: 500px;
+            height: 500px;
+
+            /* 颜色 */
+            background-color: azure;
+            border: 3x solid gray;
+
+            /*盒子居中显示 */
+            margin: 100px auto;
+
+        }
+
+        /* 设置ul的样式 */
+        ul {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        /* 盒子中的ul设置格式 */
+        div>ul {
+            /* 设置定位为相对定位 */
+            position: relative;
+
+        }
+
+        /* 对li进行格式设置 */
+        div>ul li {
+            /* 定位为绝对定位定位 */
+            position: absolute;
+            left: 50%;
+            margin-left: 20px;
+            bottom: 40px;
+            text-align: center;
+            transform-origin: bottom center;
+            
+
+            /* 设置动画 */
+            transition: all ease 3s;
+
+
+            /* 宽高 */
+            width: 40px;
+            height: 160px;
+            border: 1px solid black;
+            border-radius: 12px;
+
+            opacity: 0;
+
+
+
+        }
+
+        /* 除了第7个其他都透明 */
+        div ul li:nth-child(7){
+            opacity: 1;
+        }
+
+        /* 鼠标移动上去，都变为不透明 */
+        div ul:hover li{
+            opacity: 1;
+        }
+
+        /* 设置li的旋转，颜色，透明度 */
+        div ul li:nth-child(1),
+        div ul li:nth-child(13) {
+
+            /* 颜色 */
+            background-color: plum;
+
+        }
+
+        div ul li:nth-child(2),
+        div ul li:nth-child(12) {
+
+            /* 颜色 */
+            background-color: blueviolet;
+
+        }
+
+        div ul li:nth-child(3),
+        div ul li:nth-child(11) {
+
+
+            /* 颜色 */
+            background-color: rgb(28, 59, 213);
+
+        }
+
+        div ul li:nth-child(4),
+        div ul li:nth-child(10) {
+
+            /* 颜色 */
+            background-color: rgb(21, 182, 214);
+
+        }
+
+        div ul li:nth-child(5),
+        div ul li:nth-child(9) {
+
+
+            /* 颜色 */
+            background-color: rgb(160, 221, 215);
+        }
+
+        div ul li:nth-child(6),
+        div ul li:nth-child(8) {
+            /* 颜色 */
+            background-color: rgb(6, 220, 20);
+
+        }
+
+        div ul li:nth-child(7) {
+
+            /* 颜色 */
+            background-color: rgb(131, 177, 14);
+
+        }
+
+
+        
+            div ul:hover li:nth-child(1) {
+                transform: rotate(90deg);
+            }
+
+            div ul:hover li:nth-child(2) {
+                transform: rotate(75deg);
+            }
+
+            div ul:hover li:nth-child(3) {
+                transform: rotate(60deg);
+            }
+
+            div ul:hover li:nth-child(4) {
+                transform: rotate(45deg);
+            }
+
+            div ul:hover li:nth-child(5) {
+                transform: rotate(30deg);
+            }
+
+            div ul:hover li:nth-child(6) {
+                transform: rotate(15deg);
+            }
+
+            div ul:hover li:nth-child(7) {
+                transform: rotate(0deg);
+            }
+
+            div ul:hover li:nth-child(13) {
+                transform: rotate(-90deg);
+            }
+
+            div ul:hover li:nth-child(12) {
+                transform: rotate(-75deg);
+            }
+
+            div ul:hover li:nth-child(11) {
+                transform: rotate(-60deg);
+            }
+
+            div ul:hover li:nth-child(10) {
+                transform: rotate(-45deg);
+            }
+
+            div ul:hover li:nth-child(9) {
+                transform: rotate(-30deg);
+            }
+
+            div ul:hover li:nth-child(8) {
+                transform: rotate(-15deg);
+            }
+        
+    </style>
+</head>
+
+<body>
+    <!--创建一个盒子-->
+    <div>
+        <!--盒子中放无序列表-->
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转</title>
+    <style>
+        div {
+            /* 设置盒子的宽高 */
+            width: 100px;
+            height: 100px;
+
+            /* 设置盒子的颜色 */
+            background: yellow;
+            
+
+            /* 设置动画 */
+            transition-property:height background;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transform-origin: right top;
+
+        }
+
+        /* 盒子防置上去 */
+        div:hover{
+            transform: rotate(-90deg);
+            background-color: green;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--放置一个盒子-->
+    <div></div>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横竖屏切换</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div div {
+            height: 100px;
+            border: 1px solid black;
+
+        }
+
+        @media screen and (orientation: portrait) {
+            div div {
+                width: 33.3%;
+                background-color: blue;
+
+            }
+
+        }
+
+        @media screen and (orientation: landscape) {
+            div div {
+                width: 50%;
+                background: red;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+</body>
+
+</html>

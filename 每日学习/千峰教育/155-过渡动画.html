@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡动画</title>
+    <style>
+        div {
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: all 2s;
+        }
+
+        /* div:hover {
+            height: 300px;
+            background-color: yellow;
+        } */
+
+        div ul {
+            border: 1px solid black;
+            background: none;
+            list-style: none;
+
+            transition: all 5s;
+            height: 0px;
+            overflow: hidden;
+        }
+
+        div:hover ul {
+            height: 100%;
+        }
+
+        .list {
+            list-style: none;
+
+        }
+
+        .list li {
+            height: 50px;
+            width: 100px;
+            border: 1px solid black;
+
+        }
+
+        /* 实现点击不同的li,不同的动画过渡效果 */
+        .list :nth-child(1):hover {
+            width: 300px;
+            transition: all 2s linear;
+
+        }
+        .list :nth-child(2):hover {
+            width: 300px;
+            transition: all 2s ease;
+
+        }
+        .list :nth-child(3):hover {
+            width: 300px;
+            transition: all 2s ease-in;
+
+        }
+        .list :nth-child(4):hover {
+            width: 300px;
+            transition: all 2s ease-in-out;
+
+        }
+
+
+        /* 设置动画的四个属性，应用到box3当中 */
+        .box3
+        {
+            height: 100px;
+          
+
+        }
+        .box3:hover{
+            height: 1000px;
+            background-color: yellow;
+              transition-property:background height;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <!--transion-->
+    <div></div>
+    <div>
+        <ul>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+            <li>111</li>
+            <li>222</li>
+        </ul>
+    </div>
+    <ul class="list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+    <!--transition的动画属性-->
+    <div class="box3"></div>
+
+</body>
+
+</html>

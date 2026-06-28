@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缩放</title>
+    <style>
+        div {
+            /* 设置盒子宽高 */
+            width: 100px;
+            height: 100px;
+            /* 设置动画 */
+            transition:all linear 1s ;
+            /* 设置背景颜色，边框 */
+            background-color: red;
+            border: yellow;
+
+            /* 设置中心位置 */
+            transform-origin: left top;
+
+        }
+
+        /* 盒子放置后 */
+        div:hover{
+            transform: scale(1.5);
+            background-color:rgb(21, 52, 203) ;
+        }
+    </style>
+</head>
+
+<body>
+    <!--放置一个盒子-->
+    <div></div>
+
+</body>
+
+</html>

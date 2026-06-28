@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料卡片2</title>
+    <style>
+        /* 设置通配符样式 */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* 设置盒子样式 */
+        .box {
+            width: 350px;
+            margin: 100px auto;
+            border: 5px solid red;
+            position: relative;
+        }
+
+        /* 设置图像样式 */
+        .box img {
+            width: 100%;
+            /* position:relative; */
+            transition: all ease-in-out 0.9s;
+
+        }
+
+        /* 设置h2标签样式 */
+        .box h2 {
+            position: absolute;
+            top: 25px;
+            left: 6px;
+            color: white;
+            background-color: aqua;
+            transform: translateY(-300px);
+            transition: all ease-in-out 2s;
+            opacity: 0;
+        }
+
+        /* 设置p标签样式 */
+        .box p {
+            position: absolute;
+            bottom: 40px;
+            left: 6px;
+            background-color: aquamarine;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all ease-in-out 2s;
+        }
+
+        .box .box2{ 
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: bisque;
+            border: 3px solid yellow;
+            transition: all ease 8s;
+           
+
+        }
+
+        /* 鼠标点击时互动界面 */
+        .box:hover img {
+            transform: translateY(-30px);
+            opacity: 0.3;
+
+        }
+
+        .box:hover h2 {
+            transform: translate(0px);
+            opacity: 1;
+           
+
+        }
+
+        .box:hover p {
+            transform: translateY(0px);
+            opacity: 1;
+
+
+
+        }
+
+       
+
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+
+            }
+            to{
+                transform:rotate(360deg)
+            }
+            
+        }
+         .box .box2{
+            animation:rotate 1s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建一个盒子· -->
+    <div class="box">
+        <!-- 盒子中放入img，h2标签，p标签 -->
+        <img src="/image/网页图片1.png" alt="">
+        <h2>二级标题1111</h2>
+        <p>内容1111</p>
+        <div class="box2"></div>
+
+
+    </div>
+
+</body>
+
+</html>

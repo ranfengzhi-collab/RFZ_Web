@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐变</title>
+    <style>
+        div {
+            width: 25rem;
+            height: 25rem;
+            margin-top: 2rem;
+
+        }
+
+        .box1 {
+
+            /* 实现向左颜色渐变 */
+            background: linear-gradient(to left, red, green);
+        }
+
+        .box2 {
+            /* 实现向左颜色渐变 */
+            background: linear-gradient(to right, red, green);
+        }
+
+        .box3 {
+            /* 实现向某个方向渐变 */
+            background: linear-gradient(90deg, red, green);
+        }
+
+        /* 径向渐变 */
+        .box4 {
+            background: radial-gradient(red, yellow, green);
+        }
+
+        .box5 {
+            background: radial-gradient(red 10%, yellow 20%, green 40%);
+        }
+        .box6{
+            
+            background: -webkit-radial-gradient(60% 40%,farthest-side,red,green,yellow);
+        }
+        /* 重复渐变 */
+        .box7{
+            background: repeating-linear-gradient(to bottom,red 0%,yellow 20%,green 50%);
+        }
+        .box8{
+            background: repeating-radial-gradient(red 0%,yellow 10% ,green 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box3">
+    </div>
+
+
+
+    <!--径向渐变-->
+    <div class="box4">
+    </div>
+    <div class="box5">
+    </div>
+    <div class="box6">
+    </div>
+
+    <!--重复渐变-->
+    <div class="box7"></div>
+    <div class="box8"></div>
+
+</body>
+
+</html>

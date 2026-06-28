@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太极图</title>
+    <style>
+      
+        body{
+            background-color: azure;
+        }
+        div{
+            width: 10rem;
+            height: 10rem;
+            margin: 5rem auto;
+            background: linear-gradient(to bottom,white 50%,black 50%);
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+
+            /* 设置旋转动画 */
+            transition: all linear 5s;
+        }
+
+        div::before{
+            content: "";
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            background:radial-gradient(white 25% ,black 25%) ;
+            border-radius: 50%;
+        }
+        div::after{
+            content: "";
+            display: black;
+            width: 5rem;
+            height: 5rem;
+            background:radial-gradient(black 25%,white 25%);
+            border-radius: 50%
+            ;
+        }
+
+
+        /* 设置旋转，令其旋转起来 */
+        div:hover{
+            transform:rotate(680deg)
+        }
+
+
+
+        
+
+       
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    
+</body>
+</html>
